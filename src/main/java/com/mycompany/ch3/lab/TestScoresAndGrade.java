@@ -20,6 +20,35 @@ public class TestScoresAndGrade {
         float testC = 0;
         float average = 0;
         
+        System.out.println("Enter your first test score.");
+        testA = keyboard.nextFloat();
+        System.out.println("Enter your second test score.");
+        testB = keyboard.nextFloat();
+        System.out.println("Enter your third test score.");
+        testC = keyboard.nextFloat();
+        average = (testA + testB + testC)/3;
+        
+        if (average >= 90 && average <= 100)
+        {
+            System.out.println("Your average score was " + average + ". You got an A!");
+        }
+        else if (average >= 80 && average < 90)
+        {
+            System.out.println("Your average score was " + average + ". You got a B.");
+        }
+        else if (average >= 70 && average < 80)
+        {
+            System.out.println("Your average score was " + average + ". You got a C.");
+        }
+        else if (average >= 60 && average < 70)
+        {
+            System.out.println("Your average score was " + average + ". You got a D. Oof.");
+        }
+        else if (average < 60)
+        {
+            System.out.println("Your average score was " + average + ". You got an F. Yikes, mate.");       
+        }
+    
         
     }
 }
